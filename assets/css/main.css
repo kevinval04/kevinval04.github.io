@@ -8601,3 +8601,45 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+
+			.hero.full-background {
+  background-image: url("../../images/221A0300.JPG");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero .overlay {
+  background-color: rgba(255, 255, 255, 0); /* less opaque */
+
+  padding: 1.5em 2.5em;
+  border-radius: 1em;
+  display: inline-block;
+  
+}
+
+.profile-pic {
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1em;
+  /* border: none; */ /* optional since we’re removing it */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* deeper shadow instead of border */
+}
+
+
+.hero h1 {
+  font-size: 2.5em;
+  margin: 0.2em 0;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #333;
+}
