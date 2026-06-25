@@ -103,7 +103,18 @@
   @keyframes ring{0%{transform:rotate(0)}15%{transform:rotate(16deg)}35%{transform:rotate(-13deg)}55%{transform:rotate(9deg)}75%{transform:rotate(-5deg)}100%{transform:rotate(0)}}
   .bell-hint{font-family:var(--mono);font-size:10.5px;color:var(--ink-faint);letter-spacing:0.04em;transition:opacity .5s}
   .bell-hint.gone{opacity:0}
-  .stag{position:absolute;left:0;bottom:40px;z-index:3;background-image:url('images/stag_sprite.png');background-repeat:no-repeat;image-rendering:pixelated;opacity:0;transform:translateX(-220px);pointer-events:none}
+  .snack-grass{position:absolute;left:calc(50% + 44px);bottom:40px;z-index:2;width:92px;height:30px;opacity:0;transform:translateX(-50%) translateY(8px);transition:opacity .7s ease,transform .7s ease;pointer-events:none}
+  .snack-grass.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  .snack-grass::before{content:"";position:absolute;left:12px;right:12px;bottom:-1px;height:3px;border-radius:50%;background:rgba(47,127,85,0.16)}
+  .snack-grass span{position:absolute;bottom:0;width:3px;border-radius:4px 4px 0 0;background:linear-gradient(#8fc977,#2f7f55);transform-origin:50% 100%}
+  .snack-grass span:nth-child(1){left:14px;height:13px;transform:rotate(-30deg)}
+  .snack-grass span:nth-child(2){left:22px;height:23px;transform:rotate(-16deg)}
+  .snack-grass span:nth-child(3){left:31px;height:17px;transform:rotate(10deg)}
+  .snack-grass span:nth-child(4){left:40px;height:28px;transform:rotate(24deg)}
+  .snack-grass span:nth-child(5){left:50px;height:16px;transform:rotate(-9deg)}
+  .snack-grass span:nth-child(6){left:58px;height:25px;transform:rotate(14deg)}
+  .snack-grass span:nth-child(7){left:66px;height:19px;transform:rotate(-23deg)}
+  .stag{position:absolute;left:0;bottom:31px;z-index:3;background-image:url('images/stag_sprite.png');background-repeat:no-repeat;image-rendering:pixelated;opacity:0;transform:translateX(-220px);pointer-events:none}
 
   footer{border-top:1px solid var(--rule)}
   .foot-inner{max-width:880px;margin:0 auto;padding:clamp(48px,7vh,80px) clamp(20px,5vw,40px);display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px}

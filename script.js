@@ -13,6 +13,7 @@ const nav=document.getElementById('nav');
     centerRatio:0.5, edgePadding:24, chewBob:[6,7,8,9,8,7] };
   const SCALE=CFG.dispH/FH, dispW=FW*SCALE;
   const stag=document.getElementById('stag'), meadow=document.getElementById('meadow');
+  const snackGrass=document.getElementById('snackGrass');
   const bell=document.getElementById('bell'), hint=document.getElementById('bellHint');
   stag.style.width=dispW+'px'; stag.style.height=CFG.dispH+'px';
   stag.style.backgroundSize=(FW*SHEET_N*SCALE)+'px '+CFG.dispH+'px';
@@ -37,6 +38,7 @@ const nav=document.getElementById('nav');
     const startX=-dispW-CFG.edgePadding, centerX=Math.round(W*CFG.centerRatio-dispW/2), endX=W+CFG.edgePadding;
     const graze=grazeTimeline();
     let phase='in', t0=null, gi=0, gLast=0;
+    snackGrass.classList.remove('show');
     stag.style.opacity='1'; setFrame(0); setX(startX);
     function frame(now){
       if(t0===null)t0=now;
@@ -44,7 +46,7 @@ const nav=document.getElementById('nav');
       if(phase==='in'){
         setFrame(WALK[Math.floor(el/CFG.frameMs)%8]);
         const x=startX+CFG.walkPxPerSec*(el/1000);
-        if(x>=centerX){ setX(centerX); phase='graze'; t0=now; gi=0; gLast=now; setFrame(graze[0]); }
+        if(x>=centerX){ setX(centerX); phase='graze'; t0=now; gi=0; gLast=now; snackGrass.classList.add('show'); setFrame(graze[0]); }
         else setX(x);
       } else if(phase==='graze'){
         setX(centerX);
@@ -54,7 +56,7 @@ const nav=document.getElementById('nav');
       } else { // out
         setFrame(WALK[Math.floor(el/CFG.frameMs)%8]);
         const x=centerX+CFG.walkPxPerSec*(el/1000);
-        if(x>=endX){ stag.style.opacity='0'; busy=false; return; }
+        if(x>=endX){ stag.style.opacity='0'; snackGrass.classList.remove('show'); busy=false; return; }
         setX(x);
       }
       requestAnimationFrame(frame);
