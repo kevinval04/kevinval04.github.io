@@ -80,6 +80,7 @@
   .pub a.tl:hover h3{color:var(--teal)}
   .pub .auth{font-size:14.5px;color:var(--ink-soft);margin-top:8px}
   .pub .auth b{color:var(--ink);font-weight:500}
+  .pub .pvenue{font-family:var(--mono);font-size:11.5px;color:var(--teal-deep);margin-top:9px}
   .pub .plinks{display:flex;gap:14px;margin-top:11px}
   .pub .plinks a{font-family:var(--mono);font-size:11.5px;color:var(--teal-deep);border-bottom:1px solid var(--teal-wash);padding-bottom:2px;transition:border-color .2s}
   .pub .plinks a:hover{border-color:var(--teal)}
@@ -131,6 +132,7 @@
   .rthumb{width:188px;height:188px;border-radius:50%;overflow:hidden;box-shadow:0 16px 34px rgba(22,34,42,0.18);flex-shrink:0}
   .rthumb svg{display:block;width:100%;height:100%}
   .rthumb img{display:block;width:100%;height:100%;object-fit:cover}
+  .rthumb img.omnifield-thumb{width:108%;height:108%;margin:-4% 0 0 -4%}
   .rbody h3{font-family:var(--display);font-weight:500;font-size:clamp(19px,2.1vw,24px);line-height:1.28;color:var(--ink);letter-spacing:-0.01em}
   .rbody h3 a{transition:color .2s}
   .rbody h3 a:hover{color:var(--teal)}
