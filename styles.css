@@ -36,9 +36,9 @@
   .hero-links{display:flex;gap:9px;flex-wrap:wrap;margin-top:26px}
   .hero-links a{font-family:var(--mono);font-size:12px;color:#fff;border:1px solid rgba(255,255,255,0.5);padding:8px 15px;border-radius:9px;transition:all .2s;backdrop-filter:blur(4px)}
   .hero-links a:hover{background:#fff;color:var(--teal-deep);border-color:#fff}
-  .hero-portrait{width:clamp(200px,25vw,310px);flex-shrink:0}
+  .hero-portrait{width:clamp(230px,28vw,360px);flex-shrink:0}
   .hero-portrait .frame{width:100%;aspect-ratio:4/5;border-radius:18px;overflow:hidden;border:5px solid rgba(255,255,255,0.9);box-shadow:0 22px 60px rgba(15,35,45,0.4);
-    background-image:url('images/headshot.jpg');background-size:cover;background-position:center 30%}
+    background-image:url('images/DSCF0167 (1)_4x5_edited.jpg');background-size:cover;background-position:center center}
   .hero-portrait .cap{font-family:var(--mono);font-size:11px;color:rgba(255,255,255,0.9);text-align:center;margin-top:11px;letter-spacing:0.04em;text-shadow:0 1px 8px rgba(15,35,45,0.5)}
   .coords{position:absolute;top:84px;right:clamp(20px,5vw,64px);z-index:2;font-family:var(--mono);font-size:11px;color:rgba(255,255,255,0.82);letter-spacing:0.06em;text-shadow:0 1px 10px rgba(15,35,45,0.4)}
 
