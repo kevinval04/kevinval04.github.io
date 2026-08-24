@@ -23,7 +23,7 @@
 
   /* HERO (kept immersive) */
   .hero{position:relative;min-height:100vh;overflow:hidden}
-  .hero-photo{position:absolute;inset:0;z-index:0;background-image:url('images/halfdome.jpg');background-size:cover;background-position:center 42%}
+  .hero-photo{position:absolute;inset:0;z-index:0;background-image:url('images/halfdome.png');background-size:cover;background-position:center 42%}
   .hero-scrim{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(15,35,45,0.30) 0%,transparent 26%,transparent 48%,rgba(15,35,45,0.5) 86%,rgba(15,35,45,0.72) 100%)}
   .hero-fade{height:clamp(80px,12vh,160px);background:linear-gradient(180deg,rgba(15,35,45,0.72) 0%,#fcfdfd 100%)}
   .hero-content{position:absolute;inset:0;z-index:2;max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,64px);display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:clamp(46px,8vh,90px)}
